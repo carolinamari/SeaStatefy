@@ -1,0 +1,88 @@
+@keyframes modal-enter-animation {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.modal-container {
+    width: 27vw;
+    padding: 4vh 2vw;
+    background: #FAF9F6;
+    border-radius: 15px;
+    color: #23242A;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header-icon {
+    font-size: 1.6vw;
+    color: #EF4444;
+    margin-right: 0.5vw;
+}
+
+.modal-header-title {
+    display: flex;
+    font-size: 1.25vw;
+    font-weight: 700;
+}
+
+.p-dialog-header-icons {
+    display: none;
+}
+
+.modal-content {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.modal-message {
+    font-size: 1.2vw;
+    letter-spacing: -0.01vw;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.dismiss-footer-button {
+    font-size: 1.1vw;
+    background: #EF4444;
+    color: #FFFFFF;
+    padding: 1.7vh 2vw;
+    border-radius: 25px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.p-dialog-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition-property: background-color;
+}
+
+.p-dialog-visible {
+    display: flex;
+}
+
+.p-component-overlay-enter {
+    animation: modal-enter-animation 150ms forwards;
+}
+
+.p-component-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 0.2s;
+}

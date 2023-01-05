@@ -1,0 +1,67 @@
+.intro-section {
+    display: flex;
+
+    margin-top: 5vh;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    
+    width: 40vw;
+    margin-left: 7vw;
+}
+
+.home-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 110%;
+    color: #23242A;
+    margin-top: 10vh;
+}
+
+.home-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.35vw;
+    line-height: 110%;
+    letter-spacing: 0.0015em;
+    color: #7A7C7D;
+
+    margin-bottom: 10vh;
+}
+
+.intro-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    width: 50vw;
+    height: 35vw;
+
+    overflow: hidden;
+}
+
+.intro-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tutorial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorial-subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: #7A7C7D;
+
+    width: 84vw;
+    margin-top: 10vw;
+}

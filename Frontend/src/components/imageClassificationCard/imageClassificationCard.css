@@ -1,0 +1,120 @@
+.results-card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;
+}
+
+.results-card {
+    display: flex;
+
+    width: 90vw;
+    margin-top: 5vh;
+}
+
+.preview-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 35vw;
+    background: #F4F1F2;
+    border-radius: 30px 0 0 30px;
+}
+
+.img-preview {
+    width: 22vw;
+    height: 22vw;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 55vw;
+    background: #C3C0BA;
+    border-radius: 0 30px 30px 0;
+    padding-top: 2vh;
+}
+
+.beaufort-scale-section {
+    width: 100%;
+}
+
+.results-section-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2vw;
+    line-height: 135%;
+    letter-spacing: 0.0015em;
+    color: #1D1A1B;
+
+    padding-left: 3vw;
+}
+
+.section-bottom-line {
+    width: 51vw;
+    height: 1px;
+    background: #F4F1F2;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.probabilities-section {
+    width: 23vw;
+}
+
+.section-lateral-line {
+    width: 1px;
+    height: 90%;
+    background: #F4F1F2;
+}
+
+.similar-imgs-section {
+    width: 30vw;
+}
+
+.imgs-section-header {
+    display: flex;
+    align-items: center;
+}
+
+.icon-tooltip-wrapper {
+    margin-left: 0.5vw;
+}
+
+.info-icon {
+    font-size: 1.2vw;
+    color: #1D1A1B;
+
+    cursor: pointer;
+}
+
+.p-tooltip-text {
+    font-size: 1vw;
+    color: #616161;
+    background: rgb(250, 249, 246, 0.8);
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    width: 12vw;
+}
+
+.p-tooltip {
+    margin-top: 1vh;
+    position: absolute;
+}
+
+.sample-thumbnail {
+    width: 11vw;
+    height: 11vw;
+    margin-right: 2vw;
+    margin-bottom: 4vh;
+    margin-top: 1vh;
+}

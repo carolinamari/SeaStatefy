@@ -1,0 +1,47 @@
+.entry-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.entry-label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: 0.005em;
+    color: #616161;
+    text-transform: uppercase;
+
+    width: 15vw;
+}
+
+.last-label {
+    align-self: flex-start;
+    margin-top: 1.5vh;
+}
+
+.entry-text {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 135%;
+    letter-spacing: 0.005em;
+    color: #1D1A1B;
+
+    width: 32vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.bullet-style {
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 47vw;
+    background: #FAF9F6;
+}

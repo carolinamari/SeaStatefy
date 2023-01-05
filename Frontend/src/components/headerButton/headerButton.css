@@ -1,0 +1,27 @@
+.header-button {
+    display: inline;
+    font-family: 'DM SANS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    line-height: 135%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01vw;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.selected {
+    color: #24AEBB;
+    border-bottom: 2px solid #24AEBB;
+}
+
+.not-selected {
+    color: #1D1A1B;
+}
+
+a, button {
+    text-decoration: none;
+}

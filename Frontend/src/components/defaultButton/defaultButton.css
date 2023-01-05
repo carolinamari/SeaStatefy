@@ -1,0 +1,16 @@
+.default-button {
+    font-family: 'DM SANS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4vw;
+    color: #FFFFFF;
+
+    width: fit-content;
+    padding: 2vh 2vw;
+    background: #24AEBB;
+
+    border-radius: 8px;
+    border: #24AEBB solid 1px;
+
+    cursor: pointer;
+}
