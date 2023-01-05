@@ -1,0 +1,11 @@
+docker build -f Dockerfile -t sea_state_imbalance .
+
+docker run -it --gpus all --ipc=host -p 9807:9807 --name sea_state_imbalance -p 7007:7007 -d sea_state_imbalance
+
+docker exec -it be18e0bc38c7 /bin/bash
+
+python3 training_script.py 'AA_2014_2014-03-27_09-10-00_12Hz','AA_2015_2015-03-05_10-35-00_12Hz','AA_2015_2015-05-15_09-00-00_12Hz','YS_2017_2017-05-13_05-00-00_10Hz','BS_2011_2011-10-01_16-18-00_15Hz','BS_2011_2011-10-04_11-38-00_12Hz','BS_2011_2011-10-04_13-07-00_12Hz','BS_2011_2011-10-04_15-30-00_12Hz','BS_2013_2013-09-22_13-00-01_10Hz','BS_2013_2013-09-25_12-15-01_12Hz','BS_2013_2013-09-30_10-20-01_12Hz','LJ_2018_2018-01-03_09-39-38_10Hz','kaggle_1','kaggle_2','kaggle_3','kaggle_4' resnet34_vgg_splitted_weighted_loss_kaggle_tpn 0.001 10
+
+docker cp be18e0bc38c7:/usr/src/resnet34_vgg_splitted_weighted_loss_kaggle_tpn.pth resnet34_vgg_splitted_weighted_loss_kaggle_tpn.pth
+
+docker cp be18e0bc38c7:/usr/src/resnet34_vgg_splitted_weighted_loss_kaggle_tpn_metrics.pkl resnet34_vgg_splitted_weighted_loss_kaggle_tpn_metrics.pkl
